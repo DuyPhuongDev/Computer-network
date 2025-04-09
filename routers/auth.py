@@ -46,7 +46,7 @@ async def register(user: UserCreate, db: Session = Depends(get_db)):
         full_name=user.full_name,
         hashed_password=hashed_password,
         is_active=True,
-        status="online"
+        status="offline"
     )
     db.add(db_user)
     db.commit()
@@ -66,6 +66,10 @@ async def login(username: str = Form(...), password: str = Form(...), db: Sessio
     access_token = create_access_token(
         data={"sub": user.username}, expires_delta=timedelta(minutes=3600)
     )
+    # set status to online
+    user.status = "online"
+    db.commit()
+    db.refresh(user)
     return {"access_token": access_token, "token_type": "bearer"}
 
 # Get current user

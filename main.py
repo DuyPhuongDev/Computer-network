@@ -2,7 +2,7 @@ from fastapi import FastAPI, Depends, HTTPException, status, WebSocket, WebSocke
 from fastapi.middleware.cors import CORSMiddleware
 from database import engine
 from models import Base
-from routers import auth, channel, signaling, tracker
+from routers import auth, channel, signaling, tracker, server
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 
@@ -34,3 +34,4 @@ app.include_router(auth.router)
 app.include_router(channel.router)
 app.include_router(signaling.router)
 app.include_router(tracker.router)
+app.include_router(server.router)
