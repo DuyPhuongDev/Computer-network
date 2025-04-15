@@ -7,7 +7,8 @@ import hashlib
 from models import Users
 from database import get_db
 from typing import Optional
-SECRET_KEY = "09b0130e57868271c817d9e3f76d953b4f51396923835082747864986d168ab6"  # Thay bằng key mạnh hơn trong thực tế
+
+SECRET_KEY = "09b0130e57868271c817d9e3f76d953b4f51396923835082747864986d168ab6"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 3600
 

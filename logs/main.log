@@ -1,0 +1,40 @@
+2025-04-13 00:50:16,721 - main - INFO - Starting application
+2025-04-13 00:50:16,721 - main - INFO - Setting up CORS middleware
+2025-04-13 00:50:16,725 - main - INFO - Database tables created
+2025-04-13 00:50:16,726 - main - INFO - Registering routers
+2025-04-13 00:50:16,761 - main - INFO - Starting uvicorn server
+2025-04-13 16:00:50,772 - main - INFO - Starting application
+2025-04-13 16:00:50,773 - main - INFO - Setting up CORS middleware
+2025-04-13 16:00:50,775 - main - INFO - Database tables created
+2025-04-13 16:00:50,775 - main - INFO - Registering routers
+2025-04-13 16:00:50,799 - main - INFO - Starting uvicorn server
+2025-04-13 22:01:04,066 - main - INFO - Starting application
+2025-04-13 22:01:04,066 - main - INFO - Setting up CORS middleware
+2025-04-13 22:01:04,069 - main - INFO - Database tables created
+2025-04-13 22:01:04,069 - main - INFO - Registering routers
+2025-04-13 22:01:04,100 - main - INFO - Starting uvicorn server
+2025-04-14 14:38:17,692 - main - INFO - Starting application
+2025-04-14 14:38:17,692 - main - INFO - Setting up CORS middleware
+2025-04-14 14:38:17,696 - main - INFO - Database tables created
+2025-04-14 14:38:17,696 - main - INFO - Registering routers
+2025-04-14 14:38:17,728 - main - INFO - Starting uvicorn server
+2025-04-15 09:37:43,898 - main - INFO - Starting application
+2025-04-15 09:37:43,898 - main - INFO - Setting up CORS middleware
+2025-04-15 09:37:43,902 - main - INFO - Database tables created
+2025-04-15 09:37:43,902 - main - INFO - Registering routers
+2025-04-15 09:37:43,957 - main - INFO - Starting uvicorn server
+2025-04-15 09:43:07,943 - main - INFO - Starting application
+2025-04-15 09:43:07,944 - main - INFO - Setting up CORS middleware
+2025-04-15 09:43:07,946 - main - INFO - Database tables created
+2025-04-15 09:43:07,946 - main - INFO - Registering routers
+2025-04-15 09:43:07,969 - main - INFO - Starting uvicorn server
+2025-04-15 09:43:27,187 - main - INFO - Starting application
+2025-04-15 09:43:27,188 - main - INFO - Setting up CORS middleware
+2025-04-15 09:43:27,188 - main - INFO - Database tables created
+2025-04-15 09:43:27,189 - main - INFO - Registering routers
+2025-04-15 09:43:27,204 - main - INFO - Starting uvicorn server
+2025-04-15 09:52:28,854 - main - INFO - Starting application
+2025-04-15 09:52:28,855 - main - INFO - Setting up CORS middleware
+2025-04-15 09:52:28,855 - main - INFO - Database tables created
+2025-04-15 09:52:28,856 - main - INFO - Registering routers
+2025-04-15 09:52:28,903 - main - INFO - Starting uvicorn server
