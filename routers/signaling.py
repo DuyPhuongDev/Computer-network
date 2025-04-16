@@ -5,7 +5,7 @@ from models import Channels, Users, Messages
 from datetime import datetime
 from typing import Optional, Dict
 import json
-from service.auth import verify_token
+from service.auth import get_current_user, get_current_user_optional
 from service.logger import get_logger
 
 # Tạo logger cho module signaling
@@ -36,7 +36,7 @@ async def signaling_websocket(
     current_user = None
     if token:
         try:
-            current_user = await verify_token(token, db)
+            current_user = await get_current_user(token, db)
         except:
             await websocket.close(code=4003, reason="Invalid token")
             logger.warning(f"Invalid token for peer {peer_id}, connection closed")
@@ -120,7 +120,7 @@ async def text_websocket(
     current_user = None
     if token:
         try:
-            current_user = await verify_token(token, db)
+            current_user = await get_current_user_optional(token, db)
         except:
             await websocket.close(code=4003, reason="Invalid token")
             logger.warning(f"Invalid token for text channel {channel_id}, connection closed")

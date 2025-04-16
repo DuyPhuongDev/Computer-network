@@ -14,6 +14,7 @@ router = APIRouter(prefix="/channels", tags=["channels"])
 
 class ChannelCreate(BaseModel):
     name: str
+    server_id: int
     channel_type: ChannelType
 
 class ChannelMember(BaseModel):
@@ -60,7 +61,7 @@ async def create_channel(
     db: Session = Depends(get_db)
 ):
     # Tạo channel mới
-    db_channel = Channels(name=channel.name, channel_type=channel.channel_type)
+    db_channel = Channels(name=channel.name, channel_type=channel.channel_type, server_id=channel.server_id)
     db.add(db_channel)
     db.commit()
     db.refresh(db_channel)
