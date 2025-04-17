@@ -7,8 +7,16 @@ import hashlib
 from models import Users
 from database import get_db
 from typing import Optional
+import os
+from dotenv import load_dotenv
 
-SECRET_KEY = "09b0130e57868271c817d9e3f76d953b4f51396923835082747864986d168ab6"
+load_dotenv()
+
+MY_ENV_VAR = os.getenv('MY_ENV_VAR')
+
+print(MY_ENV_VAR)
+
+SECRET_KEY = os.getenv("JWT_SECRET_KEY");
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 3600
 
