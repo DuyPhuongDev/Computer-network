@@ -12,10 +12,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MY_ENV_VAR = os.getenv('MY_ENV_VAR')
-
-print(MY_ENV_VAR)
-
 SECRET_KEY = os.getenv("JWT_SECRET_KEY");
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 3600
