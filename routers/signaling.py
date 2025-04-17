@@ -5,7 +5,11 @@ from models import Channels, Users, Messages
 from datetime import datetime
 from typing import Optional, Dict
 import json
-from service.auth import verify_token
+from service.auth import get_current_user, get_current_user_optional
+from service.logger import get_logger
+
+# Tạo logger cho module signaling
+logger = get_logger("signaling")
 
 router = APIRouter(prefix="/ws", tags=["signaling"])
 # channel_id: {peer_id: websocket}
@@ -21,19 +25,21 @@ async def signaling_websocket(
     db: Session = Depends(get_db)
 ):
     # Kiểm tra channel tồn tại
-    print(f"channel_id: {channel_id}, peer_id: {peer_id}, token: {token}")
+    logger.info(f"channel_id: {channel_id}, peer_id: {peer_id}, token: {token}")
     channel = db.query(Channels).filter(Channels.id == channel_id).first()
     if not channel:
         await websocket.close(code=4001, reason="Channel not found")
+        logger.warning(f"Channel {channel_id} not found, connection closed")
         return
 
     # Xác thực token
     current_user = None
     if token:
         try:
-            current_user = await verify_token(token, db)
+            current_user = await get_current_user(token, db)
         except:
             await websocket.close(code=4003, reason="Invalid token")
+            logger.warning(f"Invalid token for peer {peer_id}, connection closed")
             return
 
     # Đăng ký peer vào active_connections
@@ -54,12 +60,12 @@ async def signaling_websocket(
     for ws in active_connections[channel_id].values():
         if ws != websocket:  # Không gửi lại cho peer vừa join
             await ws.send_text(json.dumps(join_message))
-    print(f"User {peer_id} joined voice channel {channel_id}")
+    logger.info(f"User {peer_id} joined voice channel {channel_id}")
 
     try:
         while True:
             data = await websocket.receive_text()
-            print(f"Received from {peer_id}: {data}")
+            logger.debug(f"Received from {peer_id}: {data}")
             message = json.loads(data)
             action = message.get("action")
             # Xử lý signaling cho WebRTC
@@ -71,7 +77,7 @@ async def signaling_websocket(
                     message["peer_id"] = peer_id
                     await target_ws.send_text(json.dumps(message))
                 else:
-                    print(f"Target {target_id} not found in channel {channel_id}")
+                    logger.warning(f"Target {target_id} not found in channel {channel_id}")
             else:
                 # Gửi tới tất cả peer khác (nếu cần broadcast thông tin khác)
                 for ws in active_connections[channel_id].values():
@@ -96,7 +102,7 @@ async def signaling_websocket(
             }
             for ws in active_connections[channel_id].values():
                 await ws.send_text(json.dumps(leave_message))
-        print(f"User {peer_id} disconnected from channel {channel_id}")
+        logger.info(f"User {peer_id} disconnected from channel {channel_id}")
      
 @router.websocket("/{channel_id}")
 async def text_websocket(
@@ -108,18 +114,21 @@ async def text_websocket(
     channel = db.query(Channels).filter(Channels.id == channel_id).first()
     if not channel:
         await websocket.close(code=4001, reason="Channel not found")
+        logger.warning(f"Text channel {channel_id} not found, connection closed")
         return
 
     current_user = None
     if token:
         try:
-            current_user = await verify_token(token, db)
+            current_user = await get_current_user_optional(token, db)
         except:
             await websocket.close(code=4003, reason="Invalid token")
+            logger.warning(f"Invalid token for text channel {channel_id}, connection closed")
             return
 
     if not current_user:
         await websocket.close(code=4003, reason="Authentication required")
+        logger.warning(f"Authentication required for text channel {channel_id}, connection closed")
         return
 
     # handshake dc fastapi xu ly khi dung app.websocket
@@ -127,12 +136,13 @@ async def text_websocket(
     if channel_id not in text_connections:
         text_connections[channel_id] = {}
     text_connections[channel_id][current_user.id] = websocket
+    logger.info(f"User {current_user.username} connected to text channel {channel_id}")
 
     try:
         while True:
             data = await websocket.receive_text()
             message_data = json.loads(data)
-            print(f"Received from {current_user.id}: {message_data}")
+            logger.debug(f"Received from {current_user.id}: {message_data}")
             new_message = Messages(
                 content=message_data["content"],
                 channel_id=channel_id,
@@ -142,7 +152,7 @@ async def text_websocket(
             db.add(new_message)
             db.commit()
             db.refresh(new_message)
-            print(f"New message: {new_message}")
+            logger.debug(f"New message: {new_message.id}")
             response = {
                 "id": new_message.id,
                 "content": new_message.content,
@@ -154,12 +164,12 @@ async def text_websocket(
                     "status": current_user.status
                 }
             }
-            print(response);
             # Gửi tin nhắn tới tất cả client trong channel
             for ws in text_connections[channel_id].values():
                 await ws.send_json(response)
     except WebSocketDisconnect:
-        if current_user.id in text_connections[channel_id]:
+        if channel_id in text_connections and current_user.id in text_connections.get(channel_id, {}):
             del text_connections[channel_id][current_user.id]
-        if not text_connections[channel_id]:
+            logger.info(f"User {current_user.username} disconnected from text channel {channel_id}")
+        if channel_id in text_connections and not text_connections[channel_id]:
             del text_connections[channel_id]

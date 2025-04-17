@@ -1,0 +1,142 @@
+2025-04-13 00:50:16,721 - main - INFO - Starting application
+2025-04-13 00:50:16,721 - main - INFO - Setting up CORS middleware
+2025-04-13 00:50:16,725 - main - INFO - Database tables created
+2025-04-13 00:50:16,726 - main - INFO - Registering routers
+2025-04-13 00:50:16,761 - main - INFO - Starting uvicorn server
+2025-04-13 16:00:50,772 - main - INFO - Starting application
+2025-04-13 16:00:50,773 - main - INFO - Setting up CORS middleware
+2025-04-13 16:00:50,775 - main - INFO - Database tables created
+2025-04-13 16:00:50,775 - main - INFO - Registering routers
+2025-04-13 16:00:50,799 - main - INFO - Starting uvicorn server
+2025-04-13 22:01:04,066 - main - INFO - Starting application
+2025-04-13 22:01:04,066 - main - INFO - Setting up CORS middleware
+2025-04-13 22:01:04,069 - main - INFO - Database tables created
+2025-04-13 22:01:04,069 - main - INFO - Registering routers
+2025-04-13 22:01:04,100 - main - INFO - Starting uvicorn server
+2025-04-14 14:38:17,692 - main - INFO - Starting application
+2025-04-14 14:38:17,692 - main - INFO - Setting up CORS middleware
+2025-04-14 14:38:17,696 - main - INFO - Database tables created
+2025-04-14 14:38:17,696 - main - INFO - Registering routers
+2025-04-14 14:38:17,728 - main - INFO - Starting uvicorn server
+2025-04-15 09:37:43,898 - main - INFO - Starting application
+2025-04-15 09:37:43,898 - main - INFO - Setting up CORS middleware
+2025-04-15 09:37:43,902 - main - INFO - Database tables created
+2025-04-15 09:37:43,902 - main - INFO - Registering routers
+2025-04-15 09:37:43,957 - main - INFO - Starting uvicorn server
+2025-04-15 09:43:07,943 - main - INFO - Starting application
+2025-04-15 09:43:07,944 - main - INFO - Setting up CORS middleware
+2025-04-15 09:43:07,946 - main - INFO - Database tables created
+2025-04-15 09:43:07,946 - main - INFO - Registering routers
+2025-04-15 09:43:07,969 - main - INFO - Starting uvicorn server
+2025-04-15 09:43:27,187 - main - INFO - Starting application
+2025-04-15 09:43:27,188 - main - INFO - Setting up CORS middleware
+2025-04-15 09:43:27,188 - main - INFO - Database tables created
+2025-04-15 09:43:27,189 - main - INFO - Registering routers
+2025-04-15 09:43:27,204 - main - INFO - Starting uvicorn server
+2025-04-15 09:52:28,854 - main - INFO - Starting application
+2025-04-15 09:52:28,855 - main - INFO - Setting up CORS middleware
+2025-04-15 09:52:28,855 - main - INFO - Database tables created
+2025-04-15 09:52:28,856 - main - INFO - Registering routers
+2025-04-15 09:52:28,903 - main - INFO - Starting uvicorn server
+2025-04-15 13:32:16,034 - main - INFO - Starting application
+2025-04-15 13:32:16,035 - main - INFO - Setting up CORS middleware
+2025-04-15 13:32:16,038 - main - INFO - Database tables created
+2025-04-15 13:32:16,038 - main - INFO - Registering routers
+2025-04-15 13:32:16,063 - main - INFO - Starting uvicorn server
+2025-04-15 13:49:18,640 - main - INFO - Starting application
+2025-04-15 13:49:18,640 - main - INFO - Setting up CORS middleware
+2025-04-15 13:49:18,641 - main - INFO - Database tables created
+2025-04-15 13:49:18,641 - main - INFO - Registering routers
+2025-04-15 13:50:08,987 - main - INFO - Starting application
+2025-04-15 13:50:08,987 - main - INFO - Setting up CORS middleware
+2025-04-15 13:50:08,988 - main - INFO - Database tables created
+2025-04-15 13:50:08,988 - main - INFO - Registering routers
+2025-04-15 14:45:58,465 - main - INFO - Starting application
+2025-04-15 14:45:58,465 - main - INFO - Setting up CORS middleware
+2025-04-15 14:45:58,466 - main - INFO - Database tables created
+2025-04-15 14:45:58,466 - main - INFO - Registering routers
+2025-04-15 14:52:20,611 - main - INFO - Starting application
+2025-04-15 14:52:20,611 - main - INFO - Setting up CORS middleware
+2025-04-15 14:52:20,612 - main - INFO - Database tables created
+2025-04-15 14:52:20,612 - main - INFO - Registering routers
+2025-04-15 14:54:58,690 - main - INFO - Starting application
+2025-04-15 14:54:58,690 - main - INFO - Setting up CORS middleware
+2025-04-15 14:54:58,691 - main - INFO - Database tables created
+2025-04-15 14:54:58,691 - main - INFO - Registering routers
+2025-04-15 14:56:05,069 - main - INFO - Starting application
+2025-04-15 14:56:05,069 - main - INFO - Setting up CORS middleware
+2025-04-15 14:56:05,070 - main - INFO - Database tables created
+2025-04-15 14:56:05,070 - main - INFO - Registering routers
+2025-04-15 14:58:52,016 - main - INFO - Starting application
+2025-04-15 14:58:52,016 - main - INFO - Setting up CORS middleware
+2025-04-15 14:58:52,017 - main - INFO - Database tables created
+2025-04-15 14:58:52,017 - main - INFO - Registering routers
+2025-04-15 15:00:20,769 - main - INFO - Starting application
+2025-04-15 15:00:20,769 - main - INFO - Setting up CORS middleware
+2025-04-15 15:00:20,770 - main - INFO - Database tables created
+2025-04-15 15:00:20,770 - main - INFO - Registering routers
+2025-04-15 15:02:53,390 - main - INFO - Starting application
+2025-04-15 15:02:53,390 - main - INFO - Setting up CORS middleware
+2025-04-15 15:02:53,391 - main - INFO - Database tables created
+2025-04-15 15:02:53,391 - main - INFO - Registering routers
+2025-04-15 15:03:08,771 - main - INFO - Starting application
+2025-04-15 15:03:08,771 - main - INFO - Setting up CORS middleware
+2025-04-15 15:03:08,772 - main - INFO - Database tables created
+2025-04-15 15:03:08,772 - main - INFO - Registering routers
+2025-04-15 15:06:30,183 - main - INFO - Starting application
+2025-04-15 15:06:30,183 - main - INFO - Setting up CORS middleware
+2025-04-15 15:06:30,184 - main - INFO - Database tables created
+2025-04-15 15:06:30,184 - main - INFO - Registering routers
+2025-04-15 15:08:23,655 - main - INFO - Starting application
+2025-04-15 15:08:23,656 - main - INFO - Setting up CORS middleware
+2025-04-15 15:08:23,657 - main - INFO - Database tables created
+2025-04-15 15:08:23,657 - main - INFO - Registering routers
+2025-04-15 15:09:00,561 - main - INFO - Starting application
+2025-04-15 15:09:00,561 - main - INFO - Setting up CORS middleware
+2025-04-15 15:09:00,562 - main - INFO - Database tables created
+2025-04-15 15:09:00,562 - main - INFO - Registering routers
+2025-04-15 15:18:56,160 - main - INFO - Starting application
+2025-04-15 15:18:56,160 - main - INFO - Setting up CORS middleware
+2025-04-15 15:18:56,161 - main - INFO - Database tables created
+2025-04-15 15:18:56,161 - main - INFO - Registering routers
+2025-04-15 15:19:55,539 - main - INFO - Starting application
+2025-04-15 15:19:55,539 - main - INFO - Setting up CORS middleware
+2025-04-15 15:19:55,540 - main - INFO - Database tables created
+2025-04-15 15:19:55,540 - main - INFO - Registering routers
+2025-04-15 15:42:04,496 - main - INFO - Starting application
+2025-04-15 15:42:04,496 - main - INFO - Setting up CORS middleware
+2025-04-15 15:42:04,496 - main - INFO - Database tables created
+2025-04-15 15:42:04,497 - main - INFO - Registering routers
+2025-04-15 15:44:48,685 - main - INFO - Starting application
+2025-04-15 15:44:48,685 - main - INFO - Setting up CORS middleware
+2025-04-15 15:44:48,686 - main - INFO - Database tables created
+2025-04-15 15:44:48,686 - main - INFO - Registering routers
+2025-04-15 21:28:14,168 - main - INFO - Starting application
+2025-04-15 21:28:14,168 - main - INFO - Setting up CORS middleware
+2025-04-15 21:28:14,172 - main - INFO - Database tables created
+2025-04-15 21:28:14,172 - main - INFO - Registering routers
+2025-04-15 21:32:10,132 - main - INFO - Starting application
+2025-04-15 21:32:10,132 - main - INFO - Setting up CORS middleware
+2025-04-15 21:32:10,133 - main - INFO - Database tables created
+2025-04-15 21:32:10,133 - main - INFO - Registering routers
+2025-04-15 21:35:31,044 - main - INFO - Starting application
+2025-04-15 21:35:31,044 - main - INFO - Setting up CORS middleware
+2025-04-15 21:35:31,045 - main - INFO - Database tables created
+2025-04-15 21:35:31,045 - main - INFO - Registering routers
+2025-04-15 22:08:29,657 - main - INFO - Starting application
+2025-04-15 22:08:29,657 - main - INFO - Setting up CORS middleware
+2025-04-15 22:08:29,660 - main - INFO - Database tables created
+2025-04-15 22:08:29,660 - main - INFO - Registering routers
+2025-04-16 11:03:29,574 - main - INFO - Starting application
+2025-04-16 11:03:29,575 - main - INFO - Setting up CORS middleware
+2025-04-16 11:03:29,576 - main - INFO - Database tables created
+2025-04-16 11:03:29,576 - main - INFO - Registering routers
+2025-04-16 11:03:29,607 - main - INFO - Starting uvicorn server
+2025-04-16 11:03:34,689 - main - INFO - Starting application
+2025-04-16 11:03:34,689 - main - INFO - Setting up CORS middleware
+2025-04-16 11:03:34,689 - main - INFO - Database tables created
+2025-04-16 11:03:34,690 - main - INFO - Registering routers
+2025-04-16 20:42:53,524 - main - INFO - Starting application
+2025-04-16 20:42:53,524 - main - INFO - Setting up CORS middleware
+2025-04-16 20:42:53,527 - main - INFO - Database tables created
+2025-04-16 20:42:53,527 - main - INFO - Registering routers

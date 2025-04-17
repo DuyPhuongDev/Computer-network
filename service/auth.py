@@ -7,7 +7,8 @@ import hashlib
 from models import Users
 from database import get_db
 from typing import Optional
-SECRET_KEY = "09b0130e57868271c817d9e3f76d953b4f51396923835082747864986d168ab6"  # Thay bằng key mạnh hơn trong thực tế
+
+SECRET_KEY = "09b0130e57868271c817d9e3f76d953b4f51396923835082747864986d168ab6"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 3600
 
@@ -54,6 +55,21 @@ async def verify_token(token: str, db: Session) -> Optional[Users]:
         raise credentials_exception
     return user
 
+def getUsernameByToken(token: str):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Could not validate credentials",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get("sub")
+        if username is None:
+            raise credentials_exception
+        return username
+    except JWTError:
+        raise credentials_exception
+
 async def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
@@ -76,4 +92,4 @@ async def get_current_user_optional(token: str = Depends(oauth2_scheme), db: Ses
     try:
         return await get_current_user(token, db)
     except HTTPException:
-        return None  # Visitor mode
+        return None

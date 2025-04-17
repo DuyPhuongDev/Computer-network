@@ -1,0 +1,175 @@
+2025-04-13 16:02:21,151 - signaling - INFO - User alice@gmail.com connected to text channel 2
+2025-04-13 16:02:31,141 - signaling - INFO - channel_id: 2, peer_id: d6ce1191-1692-4363-9489-de21bbb9d306, token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbGljZUBnbWFpbC5jb20iLCJleHAiOjE3NDQ3NTA5MTR9.gKHbDx5QOgEdVBkvcvV3dgoub5yQbb7YTRDvPRHp7OI
+2025-04-13 16:02:31,143 - signaling - INFO - User d6ce1191-1692-4363-9489-de21bbb9d306 joined voice channel 2
+2025-04-13 16:12:02,401 - signaling - INFO - User d6ce1191-1692-4363-9489-de21bbb9d306 disconnected from channel 2
+2025-04-13 16:21:40,031 - signaling - INFO - User alice@gmail.com disconnected from text channel 2
+2025-04-13 22:02:03,915 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-13 22:05:12,130 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-13 22:05:12,144 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-13 22:05:31,437 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-13 22:05:31,449 - signaling - INFO - User alice@gmail.com connected to text channel 2
+2025-04-13 22:05:33,049 - signaling - INFO - User alice@gmail.com disconnected from text channel 2
+2025-04-13 22:05:33,060 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-13 22:05:35,357 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-13 22:05:35,364 - signaling - INFO - User alice@gmail.com connected to text channel 2
+2025-04-13 22:05:37,145 - signaling - INFO - User alice@gmail.com disconnected from text channel 2
+2025-04-13 22:05:37,158 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-13 22:05:56,476 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-13 22:05:56,483 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-13 22:05:58,496 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-13 22:05:58,508 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-13 22:05:59,288 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-13 22:05:59,300 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-13 22:06:02,935 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-13 22:06:02,943 - signaling - INFO - User alice@gmail.com connected to text channel 3
+2025-04-13 22:06:03,762 - signaling - INFO - User alice@gmail.com disconnected from text channel 3
+2025-04-13 22:06:03,770 - signaling - INFO - User alice@gmail.com connected to text channel 4
+2025-04-13 22:06:04,687 - signaling - INFO - User alice@gmail.com disconnected from text channel 4
+2025-04-13 22:06:04,697 - signaling - INFO - User alice@gmail.com connected to text channel 3
+2025-04-13 22:06:05,352 - signaling - INFO - User alice@gmail.com disconnected from text channel 3
+2025-04-13 22:06:05,362 - signaling - INFO - User alice@gmail.com connected to text channel 3
+2025-04-13 22:06:08,528 - signaling - INFO - User alice@gmail.com disconnected from text channel 3
+2025-04-13 22:06:08,539 - signaling - INFO - User alice@gmail.com connected to text channel 3
+2025-04-13 22:06:12,158 - signaling - INFO - User alice@gmail.com disconnected from text channel 3
+2025-04-13 22:06:12,166 - signaling - INFO - User alice@gmail.com connected to text channel 3
+2025-04-13 22:06:12,711 - signaling - INFO - User alice@gmail.com disconnected from text channel 3
+2025-04-13 22:06:12,718 - signaling - INFO - User alice@gmail.com connected to text channel 3
+2025-04-13 22:06:35,725 - signaling - INFO - User alice@gmail.com disconnected from text channel 3
+2025-04-13 22:06:35,732 - signaling - INFO - User alice@gmail.com connected to text channel 3
+2025-04-13 22:06:36,735 - signaling - INFO - User alice@gmail.com disconnected from text channel 3
+2025-04-13 22:06:36,746 - signaling - INFO - User alice@gmail.com connected to text channel 3
+2025-04-13 22:06:37,213 - signaling - INFO - User alice@gmail.com disconnected from text channel 3
+2025-04-13 22:06:37,223 - signaling - INFO - User alice@gmail.com connected to text channel 3
+2025-04-13 22:06:38,568 - signaling - INFO - User alice@gmail.com disconnected from text channel 3
+2025-04-13 22:06:38,578 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-13 22:06:40,174 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-13 22:06:40,186 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-13 22:06:40,717 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-13 22:06:40,733 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-13 22:09:57,057 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-13 22:09:57,067 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-13 22:11:56,895 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-13 22:11:56,910 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-13 22:12:15,404 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-13 22:12:15,409 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-13 22:12:18,171 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-13 22:12:21,752 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-13 22:12:41,071 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-13 22:12:41,088 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-13 22:12:52,057 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-13 22:12:52,059 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-13 22:12:58,519 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-13 22:12:58,521 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-13 22:13:07,836 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-13 22:13:07,839 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-13 22:13:24,334 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-15 09:45:06,334 - signaling - INFO - User alice@gmail.com connected to text channel 3
+2025-04-15 09:45:11,612 - signaling - INFO - User alice@gmail.com disconnected from text channel 3
+2025-04-15 09:45:11,620 - signaling - INFO - User alice@gmail.com connected to text channel 3
+2025-04-15 09:45:12,477 - signaling - INFO - User alice@gmail.com disconnected from text channel 3
+2025-04-15 09:45:12,485 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-15 09:45:14,181 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-15 09:45:14,189 - signaling - INFO - User alice@gmail.com connected to text channel 2
+2025-04-15 09:45:18,390 - signaling - INFO - channel_id: 2, peer_id: f5565c86-76f0-4573-811d-ff54ac778118, token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbGljZUBnbWFpbC5jb20iLCJleHAiOjE3NDQ5MDEwOTh9.r7YHLUDFnUXLlFcrBidWO2MmmSr13dkGHXgpl5wfHWk
+2025-04-15 09:45:18,393 - signaling - INFO - User f5565c86-76f0-4573-811d-ff54ac778118 joined voice channel 2
+2025-04-15 09:45:24,053 - signaling - INFO - User f5565c86-76f0-4573-811d-ff54ac778118 disconnected from channel 2
+2025-04-15 09:49:34,719 - signaling - INFO - User alice@gmail.com disconnected from text channel 2
+2025-04-15 13:33:36,684 - signaling - WARNING - Invalid token for text channel 1, connection closed
+2025-04-15 13:33:46,696 - signaling - WARNING - Invalid token for text channel 1, connection closed
+2025-04-15 13:33:48,249 - signaling - WARNING - Invalid token for text channel 3, connection closed
+2025-04-15 13:33:49,105 - signaling - WARNING - Invalid token for text channel 4, connection closed
+2025-04-15 13:33:51,036 - signaling - WARNING - Invalid token for text channel 4, connection closed
+2025-04-15 13:33:51,924 - signaling - WARNING - Invalid token for text channel 1, connection closed
+2025-04-15 13:40:01,363 - signaling - WARNING - Invalid token for text channel 2, connection closed
+2025-04-15 14:29:47,547 - signaling - INFO - User alice@gmail.com connected to text channel 5
+2025-04-15 14:29:58,487 - signaling - INFO - User alice@gmail.com disconnected from text channel 5
+2025-04-15 14:29:58,494 - signaling - INFO - User alice@gmail.com connected to text channel 2
+2025-04-15 14:30:03,370 - signaling - INFO - User alice@gmail.com disconnected from text channel 2
+2025-04-15 14:30:03,372 - signaling - INFO - User alice@gmail.com connected to text channel 2
+2025-04-15 14:30:04,853 - signaling - INFO - User alice@gmail.com disconnected from text channel 2
+2025-04-15 14:30:06,417 - signaling - INFO - User alice@gmail.com connected to text channel 6
+2025-04-15 14:30:15,882 - signaling - INFO - User alice@gmail.com disconnected from text channel 6
+2025-04-15 14:30:15,890 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-15 14:37:58,135 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-15 14:37:58,147 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-15 14:37:58,995 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-15 14:37:59,001 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-15 14:40:19,688 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-15 15:30:51,640 - signaling - WARNING - Invalid token for text channel 1, connection closed
+2025-04-15 22:10:23,622 - signaling - WARNING - Authentication required for text channel 1, connection closed
+2025-04-16 11:03:57,275 - signaling - WARNING - Authentication required for text channel 1, connection closed
+2025-04-16 11:05:00,997 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-16 11:05:01,000 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-16 11:05:01,012 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-16 11:05:03,083 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-16 11:05:03,088 - signaling - INFO - User alice@gmail.com connected to text channel 5
+2025-04-16 11:05:05,516 - signaling - INFO - User alice@gmail.com disconnected from text channel 5
+2025-04-16 11:05:05,520 - signaling - INFO - User alice@gmail.com connected to text channel 2
+2025-04-16 11:05:08,352 - signaling - INFO - User alice@gmail.com disconnected from text channel 2
+2025-04-16 11:05:08,363 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-16 11:05:59,152 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-16 11:05:59,156 - signaling - INFO - User alice@gmail.com connected to text channel 2
+2025-04-16 20:43:54,954 - signaling - WARNING - Authentication required for text channel 6, connection closed
+2025-04-16 20:45:35,392 - signaling - WARNING - Authentication required for text channel 6, connection closed
+2025-04-16 20:47:28,396 - signaling - WARNING - Authentication required for text channel 6, connection closed
+2025-04-16 20:47:32,235 - signaling - WARNING - Authentication required for text channel 1, connection closed
+2025-04-16 20:47:59,936 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-16 20:47:59,937 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-16 20:47:59,947 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-16 20:48:02,210 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-16 20:48:02,215 - signaling - INFO - User alice@gmail.com connected to text channel 5
+2025-04-16 20:48:03,307 - signaling - INFO - User alice@gmail.com disconnected from text channel 5
+2025-04-16 20:48:03,317 - signaling - INFO - User alice@gmail.com connected to text channel 1
+2025-04-16 21:05:33,471 - signaling - INFO - User alice@gmail.com disconnected from text channel 1
+2025-04-16 21:05:33,490 - signaling - INFO - User alice@gmail.com connected to text channel 2
+2025-04-16 21:06:36,891 - signaling - INFO - User alice@gmail.com disconnected from text channel 2
+2025-04-16 21:12:51,197 - signaling - INFO - User alice@gmail.com connected to text channel 2
+2025-04-16 21:12:55,102 - signaling - INFO - channel_id: 2, peer_id: 2f1fa4a8-2217-4139-ac9e-c05fd2d3a66e, token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbGljZUBnbWFpbC5jb20iLCJleHAiOjE3NDQ4OTc2Nzh9.6EhSNU_F51ag5TA1M-U6aQAPTd8mQhupZD_65fLqIuc
+2025-04-16 21:12:55,104 - signaling - INFO - User 2f1fa4a8-2217-4139-ac9e-c05fd2d3a66e joined voice channel 2
+2025-04-16 21:13:30,228 - signaling - INFO - User alice@gmail.com disconnected from text channel 2
+2025-04-16 21:13:30,230 - signaling - INFO - User 2f1fa4a8-2217-4139-ac9e-c05fd2d3a66e disconnected from channel 2
+2025-04-16 21:14:51,127 - signaling - INFO - User alice@gmail.com connected to text channel 2
+2025-04-16 21:14:53,531 - signaling - INFO - channel_id: 2, peer_id: 7749527c-0c77-4297-82de-84c366fb23fd, token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbGljZUBnbWFpbC5jb20iLCJleHAiOjE3NDQ4OTc2Nzh9.6EhSNU_F51ag5TA1M-U6aQAPTd8mQhupZD_65fLqIuc
+2025-04-16 21:14:53,534 - signaling - INFO - User 7749527c-0c77-4297-82de-84c366fb23fd joined voice channel 2
+2025-04-16 21:15:07,631 - signaling - INFO - User alice@gmail.com disconnected from text channel 2
+2025-04-16 21:15:07,634 - signaling - INFO - User 7749527c-0c77-4297-82de-84c366fb23fd disconnected from channel 2
+2025-04-16 21:16:57,861 - signaling - INFO - User alice@gmail.com connected to text channel 2
+2025-04-16 21:17:00,228 - signaling - INFO - channel_id: 2, peer_id: 0e948e41-214b-4f4d-9bbd-ac3699817bf6, token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbGljZUBnbWFpbC5jb20iLCJleHAiOjE3NDQ4OTc2Nzh9.6EhSNU_F51ag5TA1M-U6aQAPTd8mQhupZD_65fLqIuc
+2025-04-16 21:17:00,231 - signaling - INFO - User 0e948e41-214b-4f4d-9bbd-ac3699817bf6 joined voice channel 2
+2025-04-16 21:17:14,068 - signaling - INFO - User alice@gmail.com disconnected from text channel 2
+2025-04-16 21:17:14,069 - signaling - INFO - User 0e948e41-214b-4f4d-9bbd-ac3699817bf6 disconnected from channel 2
+2025-04-16 21:17:16,963 - signaling - INFO - User alice@gmail.com connected to text channel 2
+2025-04-16 21:21:22,631 - signaling - INFO - User alice@gmail.com disconnected from text channel 2
+2025-04-16 21:21:24,691 - signaling - INFO - User alice@gmail.com connected to text channel 2
+2025-04-16 21:21:27,507 - signaling - INFO - channel_id: 2, peer_id: 791c97e8-c028-4d85-afbe-309abfeaee48, token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbGljZUBnbWFpbC5jb20iLCJleHAiOjE3NDQ4OTc2Nzh9.6EhSNU_F51ag5TA1M-U6aQAPTd8mQhupZD_65fLqIuc
+2025-04-16 21:21:27,510 - signaling - INFO - User 791c97e8-c028-4d85-afbe-309abfeaee48 joined voice channel 2
+2025-04-16 21:22:01,127 - signaling - INFO - User 791c97e8-c028-4d85-afbe-309abfeaee48 disconnected from channel 2
+2025-04-16 21:23:13,046 - signaling - INFO - User alice@gmail.com disconnected from text channel 2
+2025-04-16 21:23:14,899 - signaling - INFO - User alice@gmail.com connected to text channel 2
+2025-04-16 21:23:18,050 - signaling - INFO - channel_id: 2, peer_id: 5cc8dcc2-44a6-43aa-ac9e-d978b5c00834, token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbGljZUBnbWFpbC5jb20iLCJleHAiOjE3NDQ4OTc2Nzh9.6EhSNU_F51ag5TA1M-U6aQAPTd8mQhupZD_65fLqIuc
+2025-04-16 21:23:18,053 - signaling - INFO - User 5cc8dcc2-44a6-43aa-ac9e-d978b5c00834 joined voice channel 2
+2025-04-16 21:23:26,202 - signaling - INFO - User 5cc8dcc2-44a6-43aa-ac9e-d978b5c00834 disconnected from channel 2
+2025-04-16 21:25:43,950 - signaling - INFO - User alice@gmail.com disconnected from text channel 2
+2025-04-16 21:25:45,475 - signaling - INFO - User alice@gmail.com connected to text channel 2
+2025-04-16 21:25:47,984 - signaling - INFO - channel_id: 2, peer_id: 92e2a82d-8b64-45bd-932f-c930dc1b5c31, token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbGljZUBnbWFpbC5jb20iLCJleHAiOjE3NDQ4OTc2Nzh9.6EhSNU_F51ag5TA1M-U6aQAPTd8mQhupZD_65fLqIuc
+2025-04-16 21:25:47,987 - signaling - INFO - User 92e2a82d-8b64-45bd-932f-c930dc1b5c31 joined voice channel 2
+2025-04-16 21:26:11,929 - signaling - INFO - User 92e2a82d-8b64-45bd-932f-c930dc1b5c31 disconnected from channel 2
+2025-04-16 21:27:06,207 - signaling - INFO - User bob@gmail.com connected to text channel 2
+2025-04-16 21:27:11,831 - signaling - INFO - channel_id: 2, peer_id: 92e2a82d-8b64-45bd-932f-c930dc1b5c31, token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbGljZUBnbWFpbC5jb20iLCJleHAiOjE3NDQ4OTc2Nzh9.6EhSNU_F51ag5TA1M-U6aQAPTd8mQhupZD_65fLqIuc
+2025-04-16 21:27:11,833 - signaling - INFO - User 92e2a82d-8b64-45bd-932f-c930dc1b5c31 joined voice channel 2
+2025-04-16 21:27:17,135 - signaling - INFO - channel_id: 2, peer_id: f2e3635a-3e65-4669-a106-108e2457314d, token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JAZ21haWwuY29tIiwiZXhwIjoxNzQ0OTAwMDIyfQ.HUs0SFXEOPXxV9Crwr2Q9NktRYlNFhpqL-7_Gb7LA8I
+2025-04-16 21:27:17,137 - signaling - INFO - User f2e3635a-3e65-4669-a106-108e2457314d joined voice channel 2
+2025-04-16 21:27:58,786 - signaling - INFO - User f2e3635a-3e65-4669-a106-108e2457314d disconnected from channel 2
+2025-04-16 21:28:00,312 - signaling - INFO - User bob@gmail.com disconnected from text channel 2
+2025-04-16 21:28:01,880 - signaling - INFO - User 92e2a82d-8b64-45bd-932f-c930dc1b5c31 disconnected from channel 2
+2025-04-16 21:29:37,466 - signaling - INFO - User alice@gmail.com disconnected from text channel 2
+2025-04-16 21:29:38,870 - signaling - INFO - User alice@gmail.com connected to text channel 2
+2025-04-16 21:29:41,487 - signaling - INFO - channel_id: 2, peer_id: 470abf97-29a1-42a2-a599-3076ea77428c, token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbGljZUBnbWFpbC5jb20iLCJleHAiOjE3NDQ4OTc2Nzh9.6EhSNU_F51ag5TA1M-U6aQAPTd8mQhupZD_65fLqIuc
+2025-04-16 21:29:41,489 - signaling - INFO - User 470abf97-29a1-42a2-a599-3076ea77428c joined voice channel 2
+2025-04-16 21:30:03,805 - signaling - INFO - User bob@gmail.com connected to text channel 2
+2025-04-16 21:30:06,073 - signaling - INFO - channel_id: 2, peer_id: bb924dbd-aa89-44e7-b456-eee12924a031, token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JAZ21haWwuY29tIiwiZXhwIjoxNzQ0OTAwMjAwfQ.InzlIQZcpr32jghiWWPMP0k3ZZsf1AxnWYSIsHYHw0M
+2025-04-16 21:30:06,074 - signaling - INFO - User bb924dbd-aa89-44e7-b456-eee12924a031 joined voice channel 2
+2025-04-16 21:30:49,644 - signaling - INFO - User bb924dbd-aa89-44e7-b456-eee12924a031 disconnected from channel 2
+2025-04-16 21:30:49,645 - signaling - INFO - User bob@gmail.com disconnected from text channel 2
+2025-04-16 21:30:56,576 - signaling - INFO - User 470abf97-29a1-42a2-a599-3076ea77428c disconnected from channel 2
+2025-04-16 21:54:49,636 - signaling - INFO - User alice@gmail.com disconnected from text channel 2
