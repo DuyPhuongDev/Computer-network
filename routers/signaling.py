@@ -37,11 +37,25 @@ async def signaling_websocket(
     current_user = None
     if token:
         try:
-            current_user = await get_current_user(token, db)
+            current_user = await get_current_user_optional(token, db)
         except:
             await websocket.close(code=4003, reason="Invalid token")
-            logger.warning(f"Invalid token for peer {peer_id}, connection closed")
+            logger.warning(f"Invalid token for text channel {channel_id}, connection closed")
             return
+    # current user is None => guest
+    if not current_user: 
+        # await websocket.close(code=4003, reason="Authentication required")
+        # logger.warning(f"Authentication required for text channel {channel_id}, connection closed")
+        # return
+        random_uuid = str(uuid.uuid4())
+        logger.info(f"Generated random UUID: {random_uuid}")
+        current_user = Users(
+            id=random_uuid,
+            username=f"guest_{getUsernameByToken(token)}",
+            full_name=getUsernameByToken(token),
+            status="online"
+        )
+        logger.info(f"Guest user created: {current_user.username}")
 
     # Đăng ký peer vào active_connections
     await websocket.accept()
