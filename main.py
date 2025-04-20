@@ -2,7 +2,7 @@ from fastapi import FastAPI, Depends, HTTPException, status, WebSocket, WebSocke
 from fastapi.middleware.cors import CORSMiddleware
 from database import engine
 from models import Base
-from routers import auth, channel, signaling, tracker, server
+from routers import auth, channel, signaling, server
 from fastapi.responses import FileResponse
 import os
 from service.logger import get_logger
@@ -39,7 +39,6 @@ logger.info("Registering routers")
 app.include_router(auth.router)
 app.include_router(channel.router)
 app.include_router(signaling.router)
-app.include_router(tracker.router)
 app.include_router(server.router)
 
 if __name__ == "__main__":
@@ -48,7 +47,5 @@ if __name__ == "__main__":
     uvicorn.run(
         app,
         host="0.0.0.0",  # Cho phép truy cập từ LAN
-        port=8000,
-        # ssl_keyfile="./ssl/192.168.1.12+1-key.pem",
-        # ssl_certfile="./ssl/192.168.1.12+1.pem"
+        port=8000
     )

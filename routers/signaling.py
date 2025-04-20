@@ -5,8 +5,9 @@ from models import Channels, Users, Messages
 from datetime import datetime
 from typing import Optional, Dict
 import json
-from service.auth import get_current_user, get_current_user_optional
+from service.auth import get_current_user, get_current_user_optional, getUsernameByToken
 from service.logger import get_logger
+import uuid
 
 # Tạo logger cho module signaling
 logger = get_logger("signaling")
@@ -125,11 +126,21 @@ async def text_websocket(
             await websocket.close(code=4003, reason="Invalid token")
             logger.warning(f"Invalid token for text channel {channel_id}, connection closed")
             return
-
-    if not current_user:
-        await websocket.close(code=4003, reason="Authentication required")
-        logger.warning(f"Authentication required for text channel {channel_id}, connection closed")
-        return
+    # current user is None => guest
+    if not current_user: 
+        # await websocket.close(code=4003, reason="Authentication required")
+        # logger.warning(f"Authentication required for text channel {channel_id}, connection closed")
+        # return
+        random_uuid = str(uuid.uuid4())
+        logger.info(f"Generated random UUID: {random_uuid}")
+        current_user = Users(
+            id=random_uuid,
+            username=f"guest_{getUsernameByToken(token)}",
+            full_name=getUsernameByToken(token),
+            status="online"
+        )
+        logger.info(f"Guest user created: {current_user.username}")
+        
 
     # handshake dc fastapi xu ly khi dung app.websocket
     await websocket.accept()
