@@ -38,7 +38,7 @@
 
    ```bash
    git clone https://github.com/DuyPhuongDev/Computer-network.git
-   cd Computer-network/backend
+   cd Computer-network
    ```
 
 2. **Cài đặt các gói phụ thuộc**:
