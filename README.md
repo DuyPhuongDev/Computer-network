@@ -4,55 +4,51 @@
 
 Đây là backend cho ứng dụng video chat xây dựng với FastAPI. Hệ thống hỗ trợ chat văn bản, cuộc gọi video/audio thông qua WebRTC, quản lý người dùng và kênh truyền thông.
 
-This is the backend for a video chat application built with FastAPI. The system supports text chat, video/audio calls via WebRTC, user management, and communication channels.
-
 ## Tính năng / Features
 
-- **Xác thực người dùng** / **User Authentication**: Đăng ký, đăng nhập và quản lý người dùng. / Registration, login, and user management.
-- **Quản lý máy chủ và kênh** / **Servers and Channels Management**: Tạo và quản lý máy chủ và kênh chat. / Create and manage servers and chat channels.
-- **Chat văn bản** / **Text Chat**: Chat thời gian thực giữa người dùng. / Real-time text chat between users.
-- **Gọi Video/Audio** / **Video/Audio Calls**: Tích hợp WebRTC cho cuộc gọi video và audio. / WebRTC integration for video and audio calls.
-- **Hệ thống ghi nhật ký** / **Logging System**: Ghi lại tất cả kết nối, tin nhắn và sự kiện signaling. / Records all connections, messages, and signaling events.
-- **API REST** / **REST API**: Giao diện API đầy đủ cho các tác vụ quản lý. / Full API interface for management tasks.
-- **WebSockets**: Kết nối thời gian thực cho chat và signaling. / Real-time connections for chat and signaling.
+- **Xác thực người dùng**: Đăng ký, đăng nhập và quản lý người dùng.
+- **Quản lý máy chủ và kênh**: Tạo và quản lý máy chủ và kênh chat.
+- **Chat văn bản**: Chat thời gian thực giữa người dùng.
+- **Gọi Video/Audio**: Tích hợp WebRTC cho cuộc gọi video và audio.
+- **Hệ thống ghi nhật ký**: Ghi lại tất cả kết nối, tin nhắn và sự kiện signaling.
+- **REST API**: Giao diện API đầy đủ cho các tác vụ quản lý.
+- **WebSockets**: Kết nối thời gian thực cho chat và signaling.
 
 ## Cài đặt / Installation
 
 ### Yêu cầu / Requirements
 
 - Python 3.8+
-- PostgreSQL (hoặc SQLite cho phát triển) / (or SQLite for development)
+- SQLite
 
 ### Cài đặt / Setup
 
-1. **Sao chép mã nguồn / Clone the repository**:
+1. **Sao chép mã nguồn**:
 
    ```bash
-   git clone https://github.com/yourusername/video-chat-app.git
-   cd video-chat-app/backend
+   git clone https://github.com/DuyPhuongDev/Computer-network.git
+   cd Computer-network/backend
    ```
 
-2. **Cài đặt các gói phụ thuộc / Install dependencies**:
+2. **Cài đặt các gói phụ thuộc**:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Thiết lập biến môi trường / Set up environment variables**:
+3. **Thiết lập biến môi trường**:
 
    ```bash
    cp .env.example .env
-   # Chỉnh sửa .env để cấu hình / Edit .env to configure
+   # Chỉnh sửa .env để cấu hình
    ```
 
-4. **Chạy ứng dụng / Run the application**:
+4. **Chạy ứng dụng**:
    ```bash
-   python main.py
+   python3 main.py
    ```
 
 Ứng dụng sẽ khởi chạy trên http://localhost:8000.
-
-The application will be running on http://localhost:8000.
 
 ## API Documentation
 
@@ -91,13 +87,9 @@ The backend integrates a comprehensive logging system to track:
 
 Nhật ký được lưu dưới dạng JSON và tự động xoay vòng khi vượt quá 10.000 bản ghi.
 
-Logs are stored in JSON format and automatically rotated when exceeding 10,000 records.
-
 ## Docker
 
 Dự án bao gồm Dockerfile để dễ dàng triển khai.
-
-The project includes a Dockerfile for easy deployment.
 
 ```bash
 # Xây dựng image / Build the image
@@ -106,9 +98,3 @@ docker build -t video-chat-backend .
 # Chạy container / Run the container
 docker run -p 8000:8000 video-chat-backend
 ```
-
-## Liên hệ / Contact
-
-Vui lòng tạo issue trên GitHub nếu bạn gặp bất kỳ vấn đề nào.
-
-Please create an issue on GitHub if you encounter any problems.
