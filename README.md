@@ -1,8 +1,19 @@
-# Video Chat App Backend
+<a id="readme-top"></a>
 
-## Tổng quan / Overview
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="">
+    <img src="hcmut.png" alt="HCMUT Logo" width="160" height="160">
+  </a>
 
-Đây là backend cho ứng dụng video chat xây dựng với FastAPI. Hệ thống hỗ trợ chat văn bản, cuộc gọi video/audio thông qua WebRTC, quản lý người dùng và kênh truyền thông.
+  <h3 align="center">Discord-like Chat Application</h3>
+
+  <p align="center">
+    Đây là backend cho ứng dụng video chat xây dựng với FastAPI. Hệ thống hỗ trợ chat văn bản, cuộc gọi video/audio thông qua WebRTC, quản lý người dùng và kênh truyền thông.
+  </p>
+</div>
+
 
 ## Tính năng / Features
 
