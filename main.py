@@ -2,7 +2,7 @@ from fastapi import FastAPI, Depends, HTTPException, status, WebSocket, WebSocke
 from fastapi.middleware.cors import CORSMiddleware
 from database import engine
 from models import Base
-from routers import auth, channel, signaling, server
+from routers import auth, channel, signaling, server, connection_logs
 from fastapi.responses import FileResponse
 import os
 from service.logger import get_logger
@@ -40,6 +40,7 @@ app.include_router(auth.router)
 app.include_router(channel.router)
 app.include_router(signaling.router)
 app.include_router(server.router)
+app.include_router(connection_logs.router)
 
 if __name__ == "__main__":
     import uvicorn

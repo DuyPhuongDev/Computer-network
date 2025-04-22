@@ -1,12 +1,19 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session, selectinload, joinedload
 from pydantic import BaseModel
-from typing import Optional
+from typing import Optional, List, Dict, Any
 from database import get_db
 from models import Servers, Users, Channels, ChannelType, ChannelMembers
 from service.auth import get_current_user
 from routers.channel import ChannelResponse
+from service.connection_logger import get_connection_logger
+from service.logger import get_logger
 import uuid
+
+# Tạo logger cho module server
+logger = get_logger("server")
+# Tạo connection logger để theo dõi kết nối host
+connection_logger = get_connection_logger()
 
 router = APIRouter(prefix="/servers", tags=["servers"])
 
@@ -43,6 +50,17 @@ async def create_server(
         db.add(new_server)
         db.commit()
         db.refresh(new_server)
+        
+        # Log tạo centralized host
+        connection_logger.log_connection(
+            host_type="centralized_host",
+            host_id=new_server.id,
+            user_id=current_user.id,
+            event_type="create",
+            metadata={
+                "server_name": new_server.name
+            }
+        )
         
         # create default channel
         default_text_channel = Channels(

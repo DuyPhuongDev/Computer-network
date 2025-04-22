@@ -7,10 +7,13 @@ from typing import Optional, Dict
 import json
 from service.auth import get_current_user, get_current_user_optional, getUsernameByToken
 from service.logger import get_logger
+from service.connection_logger import get_connection_logger
 import uuid
 
 # Tạo logger cho module signaling
 logger = get_logger("signaling")
+# Tạo connection logger để theo dõi kết nối host
+connection_logger = get_connection_logger()
 
 router = APIRouter(prefix="/ws", tags=["signaling"])
 # channel_id: {peer_id: websocket}
@@ -72,6 +75,19 @@ async def signaling_websocket(
         "fullname": current_user.full_name
     }
     
+    # Log kết nối host của channel
+    connection_logger.log_connection(
+        host_type="channel_hosting",
+        host_id=channel.id,
+        user_id=current_user.id,
+        channel_id=channel_id,
+        event_type="connect",
+        metadata={
+            "peer_id": peer_id,
+            "username": current_user.username
+        }
+    )
+    
     for ws in active_connections[channel_id].values():
         if ws != websocket:  # Không gửi lại cho peer vừa join
             await ws.send_text(json.dumps(join_message))
@@ -90,6 +106,19 @@ async def signaling_websocket(
                 if target_id and channel_id in active_connections and target_id in active_connections[channel_id]:
                     target_ws = active_connections[channel_id][target_id]
                     message["peer_id"] = peer_id
+                    # Log signaling event
+                    connection_logger.log_connection(
+                        host_type="signaling",
+                        host_id=channel.id,
+                        user_id=current_user.id,
+                        channel_id=channel_id,
+                        event_type=action,
+                        metadata={
+                            "peer_id": peer_id,
+                            "target_id": target_id,
+                            "username": current_user.username
+                        }
+                    )
                     await target_ws.send_text(json.dumps(message))
                 else:
                     logger.warning(f"Target {target_id} not found in channel {channel_id}")
@@ -100,6 +129,19 @@ async def signaling_websocket(
                         await ws.send_text(data)
 
     except WebSocketDisconnect:
+        # Log ngắt kết nối
+        connection_logger.log_connection(
+            host_type="channel_hosting",
+            host_id=channel.id,
+            user_id=current_user.id,
+            channel_id=channel_id,
+            event_type="disconnect",
+            metadata={
+                "peer_id": peer_id,
+                "username": current_user.username
+            }
+        )
+        
         # Xóa peer khỏi active_connections
         if channel_id in active_connections and peer_id in active_connections[channel_id]:
             del active_connections[channel_id][peer_id]
@@ -155,12 +197,25 @@ async def text_websocket(
         )
         logger.info(f"Guest user created: {current_user.username}")
         
-
     # handshake dc fastapi xu ly khi dung app.websocket
     await websocket.accept()
     if channel_id not in text_connections:
         text_connections[channel_id] = {}
     text_connections[channel_id][current_user.id] = websocket
+    
+    # Log kết nối text channel
+    connection_logger.log_connection(
+        host_type="text_channel",
+        host_id=channel.id,
+        user_id=current_user.id,
+        channel_id=channel_id,
+        event_type="connect",
+        metadata={
+            "user_id": current_user.id,
+            "username": current_user.username
+        }
+    )
+    
     logger.info(f"User {current_user.username} connected to text channel {channel_id}")
 
     try:
@@ -178,6 +233,21 @@ async def text_websocket(
             db.commit()
             db.refresh(new_message)
             logger.debug(f"New message: {new_message.id}")
+            
+            # Log message event
+            connection_logger.log_connection(
+                host_type="message",
+                host_id=channel.id,
+                user_id=current_user.id,
+                channel_id=channel_id,
+                event_type="send_message",
+                metadata={
+                    "message_id": new_message.id,
+                    "username": current_user.username,
+                    "timestamp": new_message.created_at
+                }
+            )
+            
             response = {
                 "id": new_message.id,
                 "content": new_message.content,
@@ -193,6 +263,19 @@ async def text_websocket(
             for ws in text_connections[channel_id].values():
                 await ws.send_json(response)
     except WebSocketDisconnect:
+        # Log ngắt kết nối text channel
+        connection_logger.log_connection(
+            host_type="text_channel",
+            host_id=channel.id,
+            user_id=current_user.id,
+            channel_id=channel_id,
+            event_type="disconnect",
+            metadata={
+                "user_id": current_user.id,
+                "username": current_user.username
+            }
+        )
+        
         if channel_id in text_connections and current_user.id in text_connections.get(channel_id, {}):
             del text_connections[channel_id][current_user.id]
             logger.info(f"User {current_user.username} disconnected from text channel {channel_id}")
